@@ -4,17 +4,17 @@
   <img src="images/cells.jpg" width="500">
 </p>
 
-#Visão Geral
+# Visão Geral
 
 ## Este projeto tem como objetivo desenvolver e avaliar modelos de Machine Learning supervisionado para classificar tumores mamários como benignos ou malignos, utilizando dados extraídos de exames citológicos. O estudo utiliza o dataset Breast Cancer Wisconsin (Diagnostic), amplamente empregado em pesquisas acadêmicas e aplicações educacionais em ciência de dados.
 
 ## O projeto segue uma abordagem estruturada baseada na metodologia CRISP-DM, cobrindo desde a compreensão do problema até a avaliação dos modelos.
 
-#Problema de Negócio
+# Problema de Negócio
 
 ## O diagnóstico precoce e preciso do câncer de mama é fundamental para aumentar as chances de tratamento eficaz e reduzir a mortalidade. Métodos automatizados baseados em Machine Learning podem auxiliar profissionais da ## saúde ao oferecer suporte à decisão, reduzindo erros humanos e agilizando análises diagnósticas.
 
-#Dataset
+# Dataset
 
 - Fonte: Breast Cancer Wisconsin (Diagnostic)
 
@@ -26,7 +26,7 @@
 
 - Características: 30 atributos numéricos derivados de imagens de núcleos celulares (raio, textura, perímetro, área, suavidade, concavidade, entre outros).
 
-#Metodologia
+# Metodologia
 
 ## O projeto foi desenvolvido seguindo as etapas abaixo:
 

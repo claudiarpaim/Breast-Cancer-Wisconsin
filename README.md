@@ -1,7 +1,7 @@
 # Projeto Breast Cancer Wisconsin (Diagnostic)
 
 <p align="center">
-  <img src="Images/cover_breast_cancer_ml.png" width="500">
+  <img src="cover_breast_cancer_ml.png" width="500">
 </p>
 
 # Visão Geral

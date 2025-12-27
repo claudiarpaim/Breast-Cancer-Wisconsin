@@ -1,4 +1,4 @@
-# Diagnóstico de Câncer de Mama com Machine Learning
+# Projeto Breast Cancer Wisconsin (Diagnostic)
 
 <p align="center">
   <img src="cover_breast_cancer_ml.png" width="500">
@@ -24,7 +24,43 @@ O diagnóstico precoce e preciso do câncer de mama é fundamental para aumentar
 
 - Variável alvo: Malignant (M)/ Benign (B)
 
-- Características: 30 atributos numéricos derivados de imagens de núcleos celulares (raio, textura, perímetro, área, suavidade, concavidade, entre outros).
+- Os atributos apresentados nos conjunto de dados são:
+
+| Atributo                  | Descrição                                         |
+|----------------------------|--------------------------------------------------|
+| id                         | Identificador único da amostra                  |
+| diagnosis                  | Diagnóstico do tumor: M = Maligno, B = Benigno  |
+| radius_mean                | Média da distância do centro aos pontos da borda do núcleo |
+| texture_mean               | Média do desvio padrão dos valores de escala de cinza |
+| perimeter_mean             | Média do perímetro do núcleo                     |
+| area_mean                  | Média da área do núcleo                          |
+| smoothness_mean            | Média da variação local do comprimento do raio  |
+| compactness_mean           | Média de (perímetro² / área − 1)                |
+| concavity_mean             | Média da gravidade das porções côncavas do contorno |
+| concave points_mean        | Média do número de pontos côncavos              |
+| symmetry_mean              | Média da simetria do núcleo                      |
+| fractal_dimension_mean     | Média da dimensão fractal do contorno           |
+| radius_se                  | Erro padrão do raio                              |
+| texture_se                 | Erro padrão da textura                           |
+| perimeter_se               | Erro padrão do perímetro                         |
+| area_se                     | Erro padrão da área                              |
+| smoothness_se              | Erro padrão da suavidade                         |
+| compactness_se             | Erro padrão da compactação                        |
+| concavity_se               | Erro padrão da concavidade                        |
+| concave points_se          | Erro padrão dos pontos côncavos                  |
+| symmetry_se                | Erro padrão da simetria                           |
+| fractal_dimension_se       | Erro padrão da dimensão fractal                  |
+| radius_worst               | Maior valor do raio observado                    |
+| texture_worst              | Maior valor da textura                            |
+| perimeter_worst            | Maior valor do perímetro                          |
+| area_worst                 | Maior valor da área                               |
+| smoothness_worst           | Maior valor da suavidade                          |
+| compactness_worst          | Maior valor da compactação                         |
+| concavity_worst            | Maior valor da concavidade                         |
+| concave points_worst       | Maior número de pontos côncavos                  |
+| symmetry_worst             | Maior valor da simetria                           |
+| fractal_dimension_worst    | Maior valor da dimensão fractal                  |
+
 
 # Metodologia
 

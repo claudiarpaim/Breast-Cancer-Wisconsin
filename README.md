@@ -6,13 +6,13 @@
 
 # Visão Geral
 
-## Este projeto tem como objetivo desenvolver e avaliar modelos de Machine Learning supervisionado para classificar tumores mamários como benignos ou malignos, utilizando dados extraídos de exames citológicos. O estudo utiliza o dataset Breast Cancer Wisconsin (Diagnostic), amplamente empregado em pesquisas acadêmicas e aplicações educacionais em ciência de dados.
+Este projeto tem como objetivo desenvolver e avaliar modelos de Machine Learning supervisionado para classificar tumores mamários como benignos ou malignos, utilizando dados extraídos de exames citológicos. O estudo utiliza o dataset Breast Cancer Wisconsin (Diagnostic), amplamente empregado em pesquisas acadêmicas e aplicações educacionais em ciência de dados.
 
-## O projeto segue uma abordagem estruturada baseada na metodologia CRISP-DM, cobrindo desde a compreensão do problema até a avaliação dos modelos.
+O projeto segue uma abordagem estruturada baseada na metodologia CRISP-DM, cobrindo desde a compreensão do problema até a avaliação dos modelos.
 
 # Problema de Negócio
 
-## O diagnóstico precoce e preciso do câncer de mama é fundamental para aumentar as chances de tratamento eficaz e reduzir a mortalidade. Métodos automatizados baseados em Machine Learning podem auxiliar profissionais da ## saúde ao oferecer suporte à decisão, reduzindo erros humanos e agilizando análises diagnósticas.
+O diagnóstico precoce e preciso do câncer de mama é fundamental para aumentar as chances de tratamento eficaz e reduzir a mortalidade. Métodos automatizados baseados em Machine Learning podem auxiliar profissionais da saúde ao oferecer suporte à decisão, reduzindo erros humanos e agilizando análises diagnósticas.
 
 # Dataset
 
@@ -28,7 +28,7 @@
 
 # Metodologia
 
-## O projeto foi desenvolvido seguindo as etapas abaixo:
+O projeto foi desenvolvido seguindo as etapas abaixo:
 
 ### 1 - Entendimento dos dados
 
@@ -80,9 +80,9 @@
 
 # Resultados
 
-## Os modelos apresentaram alto desempenho na classificação, com destaque para algoritmos baseados em ensemble e métodos de margem máxima, que obtiveram melhor equilíbrio entre precisão e recall, métricas críticas em problemas de diagnóstico médico.
+Os modelos apresentaram alto desempenho na classificação, com destaque para algoritmos baseados em ensemble e métodos de margem máxima, que obtiveram melhor equilíbrio entre precisão e recall, métricas críticas em problemas de diagnóstico médico.
 
-## Os resultados indicam que técnicas de Machine Learning podem ser ferramentas eficazes no apoio à identificação precoce do câncer de mama.
+Os resultados indicam que técnicas de Machine Learning podem ser ferramentas eficazes no apoio à identificação precoce do câncer de mama.
 
 # Tecnologias Utilizadas
 

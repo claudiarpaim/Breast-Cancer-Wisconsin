@@ -1,7 +1,7 @@
 # Diagnóstico de Câncer de Mama com Machine Learning
 
 <p align="center">
-  <img src="images/cells.jpg" width="500">
+  <img src="cover_breast_cancer_ml.png" width="500">
 </p>
 
 # Visão Geral

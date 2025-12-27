@@ -1,100 +1,101 @@
-Diagnóstico de Câncer de Mama com Machine Learning
-Visão Geral
+# Diagnóstico de Câncer de Mama com Machine Learning
 
-Este projeto tem como objetivo desenvolver e avaliar modelos de Machine Learning supervisionado para classificar tumores mamários como benignos ou malignos, utilizando dados extraídos de exames citológicos. O estudo utiliza o dataset Breast Cancer Wisconsin (Diagnostic), amplamente empregado em pesquisas acadêmicas e aplicações educacionais em ciência de dados.
+<p align="center">
+  <img src="images/cells.jpg" width="500">
+</p>
 
-O projeto segue uma abordagem estruturada baseada na metodologia CRISP-DM, cobrindo desde a compreensão do problema até a avaliação dos modelos.
+#Visão Geral
 
-Problema de Negócio
+## Este projeto tem como objetivo desenvolver e avaliar modelos de Machine Learning supervisionado para classificar tumores mamários como benignos ou malignos, utilizando dados extraídos de exames citológicos. O estudo utiliza o dataset Breast Cancer Wisconsin (Diagnostic), amplamente empregado em pesquisas acadêmicas e aplicações educacionais em ciência de dados.
 
-O diagnóstico precoce e preciso do câncer de mama é fundamental para aumentar as chances de tratamento eficaz e reduzir a mortalidade. Métodos automatizados baseados em Machine Learning podem auxiliar profissionais da saúde ao oferecer suporte à decisão, reduzindo erros humanos e agilizando análises diagnósticas.
+## O projeto segue uma abordagem estruturada baseada na metodologia CRISP-DM, cobrindo desde a compreensão do problema até a avaliação dos modelos.
 
-Dataset
+#Problema de Negócio
 
-Fonte: Breast Cancer Wisconsin (Diagnostic)
+## O diagnóstico precoce e preciso do câncer de mama é fundamental para aumentar as chances de tratamento eficaz e reduzir a mortalidade. Métodos automatizados baseados em Machine Learning podem auxiliar profissionais da ## saúde ao oferecer suporte à decisão, reduzindo erros humanos e agilizando análises diagnósticas.
 
-Origem: Kaggle / UCI Machine Learning Repository
+#Dataset
 
-Amostras: 569
+- Fonte: Breast Cancer Wisconsin (Diagnostic)
 
-Variável alvo:
+- Origem: Kaggle / UCI Machine Learning Repository
 
-Malignant (M)
+- Amostras: 569
 
-Benign (B)
+- Variável alvo: Malignant (M)/ Benign (B)
 
-Características: 30 atributos numéricos derivados de imagens de núcleos celulares (raio, textura, perímetro, área, suavidade, concavidade, entre outros).
+- Características: 30 atributos numéricos derivados de imagens de núcleos celulares (raio, textura, perímetro, área, suavidade, concavidade, entre outros).
 
-Metodologia
+#Metodologia
 
-O projeto foi desenvolvido seguindo as etapas abaixo:
+## O projeto foi desenvolvido seguindo as etapas abaixo:
 
-Entendimento dos dados
+### 1 - Entendimento dos dados
 
-Análise da estrutura do dataset
+- Análise da estrutura do dataset
 
-Verificação de tipos, valores ausentes e distribuição das classes
+- Verificação de tipos, valores ausentes e distribuição das classes
 
-Análise Exploratória de Dados (EDA)
+### 2 - Análise Exploratória de Dados (EDA)
 
-Estatísticas descritivas
+- Estatísticas descritivas
 
-Visualização da distribuição das variáveis
+- Visualização da distribuição das variáveis
 
-Análise de correlação entre atributos
+- Análise de correlação entre atributos
 
-Pré-processamento
+### 3 - Pré-processamento
 
-Separação em conjuntos de treino e teste
+- Separação em conjuntos de treino e teste
 
-Escalonamento das variáveis
+- Escalonamento das variáveis
 
-Avaliação de possíveis impactos de outliers
+- Avaliação de possíveis impactos de outliers
 
-Modelagem
+### 4 - Modelagem
 
-Regressão Logística
+- Regressão Logística
 
-Support Vector Machine (SVM)
+- Support Vector Machine (SVM)
 
-Random Forest
+- Random Forest
 
-XGBoost
+- XGBoost
 
-Avaliação
+### 5 - Avaliação
 
-Acurácia
+- Acurácia
 
-Precisão
+- Precisão
 
-Recall
+- Recall
 
-F1-score
+- F1-score
 
-Matriz de confusão
+- Matriz de confusão
 
-Validação cruzada
+- Validação cruzada
 
-Ajuste de hiperparâmetros
+- Ajuste de hiperparâmetros
 
-Resultados
+# Resultados
 
-Os modelos apresentaram alto desempenho na classificação, com destaque para algoritmos baseados em ensemble e métodos de margem máxima, que obtiveram melhor equilíbrio entre precisão e recall, métricas críticas em problemas de diagnóstico médico.
+## Os modelos apresentaram alto desempenho na classificação, com destaque para algoritmos baseados em ensemble e métodos de margem máxima, que obtiveram melhor equilíbrio entre precisão e recall, métricas críticas em problemas de diagnóstico médico.
 
-Os resultados indicam que técnicas de Machine Learning podem ser ferramentas eficazes no apoio à identificação precoce do câncer de mama.
+## Os resultados indicam que técnicas de Machine Learning podem ser ferramentas eficazes no apoio à identificação precoce do câncer de mama.
 
-Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
-Python
+- Python
 
-NumPy
+- NumPy
 
-Pandas
+- Pandas
 
-Matplotlib
+- Matplotlib
 
-Seaborn
+- Seaborn
 
-Scikit-learn
+- Scikit-learn
 
-XGBoost
+- XGBoost

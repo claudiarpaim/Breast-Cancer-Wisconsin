@@ -1,147 +1,164 @@
-# Projeto Breast Cancer Wisconsin (Diagnostic)
+# Breast Cancer Diagnosis with Machine Learning
 
 <p align="center">
-  <img src="images/ultrassonografia_mama_ia.png" alt="Capa do projeto" width="800"/>
+  <img src="images/ultrassonografia_mama_ia.png" alt="Capa do projeto" width="600"/>
 </p>
 
 # Visão Geral
 
-Este projeto tem como objetivo desenvolver e avaliar modelos de Machine Learning supervisionado para classificar tumores mamários como benignos ou malignos, utilizando dados extraídos de exames citológicos. O estudo utiliza o dataset Breast Cancer Wisconsin (Diagnostic), amplamente empregado em pesquisas acadêmicas e aplicações educacionais em ciência de dados.
+Este projeto aplica técnicas de Ciência de Dados e Machine Learning para auxiliar no diagnóstico de câncer de mama, classificando tumores como benignos ou malignos a partir de características extraídas de imagens de exames.
 
-O projeto segue uma abordagem estruturada baseada na metodologia CRISP-DM, cobrindo desde a compreensão do problema até a avaliação dos modelos.
+O foco principal é reduzir falsos negativos, uma vez que, em contextos médicos, classificar um tumor maligno como benigno representa um risco significativo à saúde do paciente.
 
-# Problema de Negócio
 
-O diagnóstico precoce e preciso do câncer de mama é fundamental para aumentar as chances de tratamento eficaz e reduzir a mortalidade. Métodos automatizados baseados em Machine Learning podem auxiliar profissionais da saúde ao oferecer suporte à decisão, reduzindo erros humanos e agilizando análises diagnósticas.
+# Objetivo do Projeto
+
+Desenvolver e avaliar modelos de classificação supervisionada capazes de:
+- Identificar tumores malignos com alta sensibilidade (recall)
+- Minimizar falsos negativos
+- Comparar diferentes algoritmos quanto a desempenho, generalização e complexidade
+- Selecionar um modelo equilibrado para apoio à decisão clínica, não para diagnóstico definitivo
+
 
 # Dataset
 
-- Fonte: Breast Cancer Wisconsin (Diagnostic)
+- Nome: Breast Cancer Wisconsin (Diagnostic)
+- Fonte: UCI Machine Learning Repository
 
-- Origem: Kaggle / UCI Machine Learning Repository
+## Descrição:
+O dataset contém medições numéricas derivadas de imagens digitalizadas de biópsias de mama, incluindo características como:
 
-- Amostras: 569
+- Raio
+- Textura
+- Perímetro
+- Área
+- Suavidade, entre outras
 
-- Variável alvo: Malignant (M)/ Benign (B)
-
-- Os atributos apresentados nos conjunto de dados são:
-
-| Atributo                  | Descrição                                         |
-|----------------------------|--------------------------------------------------|
-| id                         | Identificador único da amostra                  |
-| diagnosis                  | Diagnóstico do tumor: M = Maligno, B = Benigno  |
-| radius_mean                | Média da distância do centro aos pontos da borda do núcleo |
-| texture_mean               | Média do desvio padrão dos valores de escala de cinza |
-| perimeter_mean             | Média do perímetro do núcleo                     |
-| area_mean                  | Média da área do núcleo                          |
-| smoothness_mean            | Média da variação local do comprimento do raio  |
-| compactness_mean           | Média de (perímetro² / área − 1)                |
-| concavity_mean             | Média da gravidade das porções côncavas do contorno |
-| concave points_mean        | Média do número de pontos côncavos              |
-| symmetry_mean              | Média da simetria do núcleo                      |
-| fractal_dimension_mean     | Média da dimensão fractal do contorno           |
-| radius_se                  | Erro padrão do raio                              |
-| texture_se                 | Erro padrão da textura                           |
-| perimeter_se               | Erro padrão do perímetro                         |
-| area_se                     | Erro padrão da área                              |
-| smoothness_se              | Erro padrão da suavidade                         |
-| compactness_se             | Erro padrão da compactação                        |
-| concavity_se               | Erro padrão da concavidade                        |
-| concave points_se          | Erro padrão dos pontos côncavos                  |
-| symmetry_se                | Erro padrão da simetria                           |
-| fractal_dimension_se       | Erro padrão da dimensão fractal                  |
-| radius_worst               | Maior valor do raio observado                    |
-| texture_worst              | Maior valor da textura                            |
-| perimeter_worst            | Maior valor do perímetro                          |
-| area_worst                 | Maior valor da área                               |
-| smoothness_worst           | Maior valor da suavidade                          |
-| compactness_worst          | Maior valor da compactação                         |
-| concavity_worst            | Maior valor da concavidade                         |
-| concave points_worst       | Maior número de pontos côncavos                  |
-| symmetry_worst             | Maior valor da simetria                           |
-| fractal_dimension_worst    | Maior valor da dimensão fractal                  |
-
+## Variável alvo:
+- Malignant (câncer)
+- Benign (não câncer)
 
 # Metodologia
 
 O projeto foi desenvolvido seguindo as etapas abaixo:
 
-### 1 - Entendimento dos dados
-
-- Análise da estrutura do dataset
-
-- Verificação de tipos, valores ausentes e distribuição das classes
-
-### 2 - Análise Exploratória de Dados (EDA)
+## 1 - Análise Exploratória de Dados (EDA)
 
 - Estatísticas descritivas
-
-- Visualização da distribuição das variáveis
-
+- Distribuição da variável alvo
+<p align="center">
+  <img src="images/variavel_alvo.png" alt="Capa do projeto" width="700"/>
+</p>
+- Análise de correlação entre atributos
+- Relação entre variáveis e diagnóstico
+- Avaliação visual de outliers
 <p align="center">
   <img src="images/outliers.png" alt="Capa do projeto" width="700"/>
-</p>
+</p>  
+- Extração de insights clínicos e estatísticos relevantes
 
-- Análise de correlação entre atributos
+## 2 - Pré-processamento
 
-### 3 - Pré-processamento
+- Separação em treino e teste
+- Escalonamento de atributos (RobustScaler)
+- Justificativa técnica para manutenção de outliers (informação clínica relevante)
 
-- Separação em conjuntos de treino e teste
+## 3 - Modelagem
 
-- Escalonamento das variáveis
-
-- Avaliação de possíveis impactos de outliers
-
-### 4 - Modelagem
+**Modelos avaliados:**
 
 - Regressão Logística
-
-- Support Vector Machine (SVM)
-
-<p align="center">
-  <img src="images/permutation_importance_svm.png" alt="Capa do projeto" width="600"/>
-</p>
-
+- KNN
+- SVM (RBF)
+- Decision Tree
 - Random Forest
-
 - XGBoost
+- LightGBM
 
-### 5 - Avaliação
+## 4 - Avaliação
+
+**Métricas consideradas:**
 
 - Acurácia
-
-- Precisão
-
-- Recall
-
-- F1-score
-
-- Matriz de confusão
-
+- Recall para classe Maligna
+- Número de falsos negativos
 <p align="center">
   <img src="images/confusion_matrix.png" alt="Capa do projeto" width="400"/>
 </p>
+- Comparação entre treino e teste (generalização)
 
-- Ajuste de hiperparâmetros
+| Modelo              | Acurácia (Teste) | Recall (Maligna) | Falsos Negativos |
+| ------------------- | ---------------- | ---------------- | ---------------- |
+| Regressão Logística | 97,37%           | 0,93             | 3                |
+| KNN                 | 93,86%           | 0,86             | 6                |
+| **SVM (RBF)**       | **98,25%**       | **0,95**         | **2**            |
+| Decision Tree       | 92,11%           | 0,86             | 6                |
+| Random Forest       | 94,74%           | 0,90             | 4                |
+| XGBoost             | 96,49%           | 0,93             | 3                |
+| LightGBM            | 97,37%           | 0,95             | 2                |
 
-# Resultados
+# Modelo Escolhido
 
-Os modelos apresentaram alto desempenho na classificação, com destaque para algoritmos baseados em ensemble e métodos de margem máxima, que obtiveram melhor equilíbrio entre precisão e recall, métricas críticas em problemas de diagnóstico médico.
+## SVM com kernel RBF
 
-Os resultados indicam que técnicas de Machine Learning podem ser ferramentas eficazes no apoio à identificação precoce do câncer de mama.
+**Justificativa:**
 
-# Tecnologias Utilizadas
+- Alta sensibilidade para tumores malignos
+- Menor número de falsos negativos
+- Excelente capacidade de generalização
+- Boa estabilidade entre treino e teste
+<p align="center">
+  <img src="images/permutation_importance_svm.png" alt="Capa do projeto" width="400"/>
+</p>
 
-- Python
+# Interpretação e Impacto no Mundo Real
 
-- NumPy
+Embora o modelo apresente alto desempenho, ele não substitui diagnóstico médico. Seu uso é indicado como:
 
-- Pandas
+- Ferramenta de apoio à decisão
+- Auxílio na priorização de casos suspeitos
+- Redução do risco de diagnósticos tardios
 
-- Matplotlib
+O conceito de **risco residual** é considerado: mesmo com métricas elevadas, erros ainda podem ocorrer, reforçando a necessidade de avaliação clínica humana.
 
-- Seaborn
+# Visualizações
 
-- Scikit-learn
+## O projeto inclui gráficos como:
 
-- XGBoost
+- Distribuição das variáveis
+- Mapas de correlação
+- Matrizes de confusão
+- Comparação entre modelos
+- Análise de possíveis sinais de overfitting
+
+**Nota:** Algumas imagens são ilustrativas e foram geradas por Inteligência Artificial, utilizadas exclusivamente para fins educacionais.
+
+# Estrutura do Repositório
+
+├── notebooks/
+│   └── projeto_breast_cancer.ipynb
+├── images/
+│   └── ultrassonografia_mama_ia.png
+├── README.md
+
+# Como executar o Projeto
+
+git clone https://github.com/claudiarpaim/Breast-Cancer-Wisconsin.git
+pip install -r requirements.txt
+jupyter notebook notebooks/projeto_breast_cancer.ipynb
+
+# Próximos Passos
+
+- Aplicar técnicas de explicabilidade (SHAP / LIME)
+- Avaliar o modelo em outros datasets médicos
+- Ajustar limiar de decisão focando ainda mais em recall
+- Estruturar pipeline para produção
+
+# Autora
+
+## Cláudia Rosa
+Cientista de Dados Júnior | Química Ambiental
+🔗 LinkedIn: (linkedin.com/in/claudia-rosa-datascience)
+
+
+

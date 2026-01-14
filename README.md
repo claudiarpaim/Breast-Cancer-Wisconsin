@@ -84,8 +84,9 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 - Número de falsos negativos                               
 <p align="center">
   <img src="images/confusion_matrix.png" alt="Capa do projeto" width="400"/>
-</p>                                 
+</p>                                                                             
 - Comparação entre treino e teste (generalização)
+
 
 | Modelo              | Acurácia (Teste) | Recall (Maligna) | Falsos Negativos |
 | ------------------- | ---------------- | ---------------- | ---------------- |
@@ -143,9 +144,9 @@ O conceito de **risco residual** é considerado: mesmo com métricas elevadas, e
 
 # Como executar o Projeto
 
-git clone https://github.com/claudiarpaim/Breast-Cancer-Wisconsin.git
-pip install -r requirements.txt
-jupyter notebook notebooks/projeto_breast_cancer.ipynb
+git clone https://github.com/claudiarpaim/Breast-Cancer-Wisconsin.git                                          
+pip install -r requirements.txt                                             
+jupyter notebook notebooks/projeto_breast_cancer.ipynb                                              
 
 # Próximos Passos
 
@@ -158,6 +159,7 @@ jupyter notebook notebooks/projeto_breast_cancer.ipynb
 
 ## Cláudia Rosa
 Cientista de Dados Júnior | Química Ambiental
+
 🔗 LinkedIn: (linkedin.com/in/claudia-rosa-datascience)
 
 

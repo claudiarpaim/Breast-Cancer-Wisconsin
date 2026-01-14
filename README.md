@@ -78,6 +78,10 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 
 - Visualização da distribuição das variáveis
 
+<p align="center">
+  <img src="images/outliers.png" alt="Capa do projeto" width="600"/>
+</p>
+
 - Análise de correlação entre atributos
 
 ### 3 - Pré-processamento

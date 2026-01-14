@@ -88,7 +88,7 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 - Comparação entre treino e teste (generalização)
                             
 <p align="center">
-  <img src="images/confusion_matrix.png" alt="Capa do projeto" width="400"/>
+  <img src="images/confusion_matrix.png" alt="Capa do projeto" width="700"/>
 </p>        
 
 
@@ -115,7 +115,7 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 - Boa estabilidade entre treino e teste                                      
 
 <p align="center">
-  <img src="images/permutation_importance_svm.png" alt="Capa do projeto" width="400"/>
+  <img src="images/permutation_importance_svm.png" alt="Capa do projeto" width="700"/>
 </p>                            
 
 # Interpretação e Impacto no Mundo Real

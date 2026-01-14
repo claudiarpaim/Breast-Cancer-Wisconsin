@@ -79,7 +79,7 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 - Visualização da distribuição das variáveis
 
 <p align="center">
-  <img src="images/outliers.png" alt="Capa do projeto" width="600"/>
+  <img src="images/outliers.png" alt="Capa do projeto" width="700"/>
 </p>
 
 - Análise de correlação entre atributos
@@ -119,7 +119,7 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 - Matriz de confusão
 
 <p align="center">
-  <img src="images/confusion_matrix.png" alt="Capa do projeto" width="300"/>
+  <img src="images/confusion_matrix.png" alt="Capa do projeto" width="400"/>
 </p>
 
 - Ajuste de hiperparâmetros

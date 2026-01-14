@@ -46,20 +46,19 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 
 - Estatísticas descritivas                                   
 - Distribuição da variável alvo
-                                     
-<p align="center">
-  <img src="images/variavel_alvo.png" alt="Capa do projeto" width="500"/>
-</p>
-
 - Análise de correlação entre atributos                                     
 - Relação entre variáveis e diagnóstico                                    
 - Avaliação visual de outliers 
+- Extração de insights clínicos e estatísticos relevantes                       
+
+<p align="center">
+  <img src="images/variavel_alvo.png" alt="Capa do projeto" width="700"/>
+</p>
 
 <p align="center">
   <img src="images/outliers.png" alt="Capa do projeto" width="700"/>
-</p>    
+</p> 
 
-- Extração de insights clínicos e estatísticos relevantes                       
 
 ## 2 - Pré-processamento
 
@@ -86,12 +85,11 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 - Acurácia                       
 - Recall para classe Maligna                         
 - Número de falsos negativos
+- Comparação entre treino e teste (generalização)
                             
 <p align="center">
   <img src="images/confusion_matrix.png" alt="Capa do projeto" width="400"/>
 </p>        
-
-- Comparação entre treino e teste (generalização)
 
 
 
@@ -115,6 +113,7 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 - Menor número de falsos negativos
 - Excelente capacidade de generalização
 - Boa estabilidade entre treino e teste                                      
+
 <p align="center">
   <img src="images/permutation_importance_svm.png" alt="Capa do projeto" width="400"/>
 </p>                            

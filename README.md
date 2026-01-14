@@ -118,6 +118,10 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 
 - Matriz de confusão
 
+<p align="center">
+  <img src="images/confusion_matrix.png" alt="Capa do projeto" width="500"/>
+</p>
+
 - Validação cruzada
 
 - Ajuste de hiperparâmetros

@@ -94,6 +94,10 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 
 - Support Vector Machine (SVM)
 
+<p align="center">
+  <img src="images/permutation_importance_svm.png" alt="Capa do projeto" width="600"/>
+</p>
+
 - Random Forest
 
 - XGBoost

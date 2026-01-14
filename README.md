@@ -46,7 +46,7 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 
 - Estatísticas descritivas                                   
 - Distribuição da variável alvo
--                                      
+                                     
 <p align="center">
   <img src="images/variavel_alvo.png" alt="Capa do projeto" width="500"/>
 </p>
@@ -86,7 +86,7 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 - Acurácia                       
 - Recall para classe Maligna                         
 - Número de falsos negativos
--                            
+                            
 <p align="center">
   <img src="images/confusion_matrix.png" alt="Capa do projeto" width="400"/>
 </p>        

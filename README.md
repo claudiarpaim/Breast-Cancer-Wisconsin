@@ -44,18 +44,18 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 
 ## 1 - Análise Exploratória de Dados (EDA)
 
-- Estatísticas descritivas
-- Distribuição da variável alvo
+- Estatísticas descritivas                                   
+- Distribuição da variável alvo                                     
 <p align="center">
-  <img src="images/variavel_alvo.png" alt="Capa do projeto" width="700"/>
+  <img src="images/variavel_alvo.png" alt="Capa do projeto" width="500"/>
 </p>
-- Análise de correlação entre atributos
-- Relação entre variáveis e diagnóstico
-- Avaliação visual de outliers
+- Análise de correlação entre atributos                                     
+- Relação entre variáveis e diagnóstico                                    
+- Avaliação visual de outliers                                     
 <p align="center">
   <img src="images/outliers.png" alt="Capa do projeto" width="700"/>
-</p>  
-- Extração de insights clínicos e estatísticos relevantes
+</p>                         
+- Extração de insights clínicos e estatísticos relevantes                       
 
 ## 2 - Pré-processamento
 
@@ -79,12 +79,12 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 
 **Métricas consideradas:**
 
-- Acurácia
-- Recall para classe Maligna
-- Número de falsos negativos
+- Acurácia                       
+- Recall para classe Maligna                         
+- Número de falsos negativos                               
 <p align="center">
   <img src="images/confusion_matrix.png" alt="Capa do projeto" width="400"/>
-</p>
+</p>                                 
 - Comparação entre treino e teste (generalização)
 
 | Modelo              | Acurácia (Teste) | Recall (Maligna) | Falsos Negativos |
@@ -106,10 +106,10 @@ O projeto foi desenvolvido seguindo as etapas abaixo:
 - Alta sensibilidade para tumores malignos
 - Menor número de falsos negativos
 - Excelente capacidade de generalização
-- Boa estabilidade entre treino e teste
+- Boa estabilidade entre treino e teste                                      
 <p align="center">
   <img src="images/permutation_importance_svm.png" alt="Capa do projeto" width="400"/>
-</p>
+</p>                            
 
 # Interpretação e Impacto no Mundo Real
 

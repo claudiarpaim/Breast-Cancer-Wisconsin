@@ -1,7 +1,7 @@
 # Breast Cancer Diagnosis with Machine Learning
 
 <p align="center">
-  <img src="images/ultrassonografia_mama_ia.png" alt="Capa do projeto" width="600"/>
+  <img src="images/ultrassonografia_mama_ia.png" alt="Capa do projeto" width="700"/>
 </p>
 
 # Visão Geral

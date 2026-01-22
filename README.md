@@ -152,7 +152,7 @@ O conceito de **risco residual** é considerado: mesmo com métricas elevadas, e
 
 git clone https://github.com/claudiarpaim/Breast-Cancer-Wisconsin.git                                          
 pip install -r requirements.txt                                             
-jupyter notebook notebooks/projeto_breast_cancer.ipynb                                              
+jupyter notebook notebooks/projeto_breast_cancer1.ipynb                                              
 
 # Próximos Passos
 

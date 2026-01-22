@@ -142,11 +142,11 @@ O conceito de **risco residual** é considerado: mesmo com métricas elevadas, e
 
 # Estrutura do Repositório
 
-├── notebooks/
-│   └── projeto_breast_cancer.ipynb
-├── images/
-│   └── ultrassonografia_mama_ia.png
-├── README.md
+├── notebooks/                      
+│   └── projeto_breast_cancer.ipynb                                
+├── images/                    
+│   └── ultrassonografia_mama_ia.png                       
+├── README.md                    
 
 # Como executar o Projeto
 
